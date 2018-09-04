@@ -1,0 +1,40 @@
+{
+  "config": {
+    "sort-packages": true
+  },
+  "name": "pe/component-licensing",
+  "description": "Encrypted license client/server library",
+  "keywords": ["license"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pavlenko Eugeniy",
+      "email": "pavlenko.obs@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5",
+    "defuse/php-encryption": "2.1",
+    "guzzlehttp/guzzle": "^6.3",
+    "psr/simple-cache": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~5.0"
+  },
+  "suggest": {},
+  "autoload": {
+    "psr-4": {
+      "PE\\Component\\Licensing\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PETest\\Component\\Licensing\\": "tests/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}
